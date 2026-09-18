@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar styling */
+.navbar{
+    display: flex;
+    background-color: rgb(255, 255, 255, 0);
+    width: 100%;
+    align-items: center;
+    position: fixed;
+    justify-content: space-around;
+    height: 68px;
+    z-index: 2;
+    transition: all ease 0.5s;
+}
+.imglogo{
+    width: 68px;
+    transition: all ease 0.5s;
+    clip-path: circle();
+}
+.item{
+    display: inline;
+    list-style: none;
+    font-weight: 500;
+    margin-right: 18px;
+}
+.item a{
+    color: white;
+    text-decoration: none;
+    transition: all ease 0.5s;
+    font-size: 19px;
+}
+.item a:hover{
+    color: #147bdc;
+}
+
+.btnlink{
+    text-decoration: none;
+}
+.btn{
+    width: 148px;
+    height: 41px;
+    border: solid white 2px;
+    background: rgba(2, 3, 3, 0);
+    font-size: 18px;
+    transition: all ease 0.5s;
+    color: white;
+    border-radius: 7px;
+}
+.btn:hover{
+    background-color: white;
+    color: #147bdc;
+}
+
+.burgur{
+    display: none;
+    position: absolute;
+    top: 22px;
+    right: 17px;
+}
+.bur{
+    width: 26px;
+    height: 4px;
+    background: white;
+    margin-bottom: 4px;
+    border-radius: 4px;
+}
+.sticky{
+    background-color: rgba(20, 123, 220);
+}
+.stickyitem a:hover{
+    color: white;
+}
+
+
+
+/*---- Home Styling ---- */
+.vidbg{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+.home{
+    position: absolute;
+    /* top: 12rem; */
+    top: -1px;
+    width: 100%;
+    flex-direction: column-reverse;
+    display: flex;
+    text-align: center;
+    height: 100vh;
+    /* right: 46px; */
+    color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+}   
+.head{
+    font-size: 33px;
+    font-weight: 800;
+    text-shadow: 3px 3px grey;
+}
+.color{
+    color: rgb(20, 123, 220);
+}
+.intro{
+    font-size: 21px;
+    margin-right: 32px;
+    text-shadow: 3px 3px grey;
+    margin-left: 32px;
+}
+
+
+/* ----Review Styling---- */
+.pic{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #ffffff;
+    transition: all 0.3s ease;
+}
+.review{
+    margin-bottom: 39px;
+    margin-top: 67px;
+}
+.card-set{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.name{
+    font-size: 21px;
+    font-weight: 800;
+    transition: all 0.3s ease;
+}
+.reviewpara{
+    transition: all 0.3s ease;
+    font-size: 18px;
+}
+.reviewhead{
+    text-align: center;
+    font-size: 35px;
+    color: rgb(20, 123, 220);
+    margin-bottom: 32px;
+}
+.card{
+    border: solid 2px rgb(73 167 255);
+    width: 257px;
+    display: flex;
+    height: 285px;
+    flex-direction: column;
+    transition: all 0.3s ease;
+    cursor: default;
+    margin-bottom: 34px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.card:hover{
+    background-color: rgb(20, 123, 220);
+    border-color: #ffffff;
+    box-shadow: 0px 0px 10px 3px rgb(20, 123, 220);
+}
+
+.card:hover .reviewpara{
+    color:#ffffff;
+}
+.card:hover .name{
+    color:#ffffff;
+}
+
+
+/* ----Servies Styling---- */
+.serve{
+    margin-bottom: 37px;
+    padding-top: 29px;
+    font-size: 35px;
+}
+.serve-card{
+    display: flex;
+    flex-direction: column;
+    border: solid white 2px;
+    width: 246px;
+    height: 16rem;
+	border-radius: 18%;
+    justify-content: center;
+    transition: all ease 0.5s;
+    cursor: default;
+    align-items: center;
+    margin-bottom: 34px;
+    text-align: center;
+}
+.serve-card i{
+    font-size: 39px;
+}
+.serveimg{
+    margin-top: 3px;
+    margin-bottom: -2px;
+}
+.servies{
+    background: rgb(20, 123, 220);
+    text-align: center;
+    color: #ffffff;
+}
+.servies-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.serve-card:hover{
+    background: rgb(10, 86, 156);
+    box-shadow: 0px 0px 10px 3px rgb(10, 86, 156);
+}
+
+/* ----Booking Styling---- */
+.book{
+    margin-top: 31px;
+    text-align: center;
+    margin-bottom: 43px;
+}
+.formcontent{
+    font-size: 25px;
+    margin-right: 31px;
+}
+.form{
+    display: flex;
+    width: 100%;
+    color: rgb(20, 123, 220);
+    justify-content: center;
+}
+.formdiv{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 23px;
+}
+.iteraction{
+    border: none;
+    border-bottom: rgb(106, 183, 255) solid 2px;
+    width: 65vw;
+    height: 31px;
+    outline: none;
+    font-size: 17px;
+    transition: all ease 0.3s;
+    text-align: center;
+    color: rgb(20, 123, 220);
+}
+.iteraction:hover{
+    border: none;
+    border-bottom: rgb(20, 123, 220) solid 2px;
+    width: 65vw;
+    height: 31px;
+    outline: none;
+    font-size: 17px;
+    transition: all ease 0.3s;
+    text-align: center;
+    color: rgb(20, 123, 220);
+}
+.bookhead{
+    color: rgb(20, 123, 220);
+    font-size: 37px;
+    margin-bottom: 33px;    
+}
+
+.btn-form{
+    width: 13rem;
+    height: 3rem;
+    font-size: 17px;
+    font-weight: 600;
+    transition: all ease 0.5s;
+    background: rgb(20, 123, 220);
+    border: solid rgb(20, 123, 220) 2px;
+    color: white;
+    border-radius: 7px;
+}
+.btn-form:hover{
+    background: white;
+    color: rgb(20, 123, 220);
+}
+
+/* ----Footer Styling---- */
+footer{
+    display: flex;
+    
+    background-color: #147bdc;
+    height: 37px;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ----Media queries----  */
+@media(max-width:679px){
+    .navlist{
+        display: none;
+        transition: all ease 0.5s;
+    }
+    .navlist .item{
+        margin-bottom: 3rem;
+    }
+    .logo{
+        position: absolute;
+        top: 4px;
+        left: 10px;
+    }
+    .btn{
+        display: none;
+    }
+    .burgur{
+        display: block;
+    }
+    
+}
+/* Hamburgur Menu Bar  */
+.resnavbar{
+    display: flex;
+    background-color: rgb(20, 123, 220, 0.9);
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+}
+.resbtn{
+    display: block;
+    margin-bottom: 9px;
+}
+.resnavlist{
+    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 54px;
+    
+}
+.reslogo{
+    position: relative;
+    left: -257px;
+}
+.resitem{
+    display: inline;
+    list-style: none;
+    font-weight: 500;
+    margin-right: 0;
+    margin-bottom: 6px;
+}
+.resitem a:hover{
+    color: white;
+}

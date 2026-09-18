@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FavTour | Love of Tour</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    
+    <!-- Navigation Menu -->
+    <nav class="navbar" id="navbar">
+        <div class="logo" >
+            <img src="img/logo.png" alt="logo" class="imglogo">
+        </div>
+        <ul class="navlist" >
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#review">Reviews</a></li>
+            <li class="item"><a href="#serives">Services</a></li>
+            <li class="item"><a href="#book">Book&nbsp;Now</a></li>
+        </ul>
+        <a href="#" class="btnlink"><button class="btn" >Button</button></a>
+        <div class="burgur" id="menu">
+            <div class="bur"></div>
+            <div class="bur"></div>
+            <div class="bur"></div>
+        </div>
+    </nav>
+    <div class="bg">
+        <video class="vidbg" autoplay muted loop>
+            <source src="img/bgvid.mp4" type="video/mp4">
+        </video>
+    </div>
+    <section class="home" id="home">
+        <h1 class="head">Explore The World with <i><span class="color">FavTour</span></i></h1>
+        <p class="intro">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, voluptatem. Eos iusto dignissimos quod
+            repudiandae exercitationem corporis beatae corrupti aliquam.
+        </p>
+    </section>
+
+
+    <!-- Review Section  -->
+    <section class="review" id="review">
+        <h1 class="reviewhead">Reviews</h1>
+        <div class="card-set">
+            <div class="card" >
+                <img src="img/profile-1.jpeg" alt="img" class="pic">
+                <h2 class="name">Someone Name</h2>
+                <p class="reviewpara">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, modi!</p>
+            </div>
+            <div class="card">
+                <img src="img/profile-2.jpeg" alt="img" class="pic">
+                <h2 class="name">Someone Name</h2>
+                <p class="reviewpara">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, modi!</p>
+            </div>
+            <div class="card">
+                <img src="img/profile-5.jpeg" alt="img" class="pic">
+                <h2 class="name">Someone Name</h2>
+                <p class="reviewpara">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non, modi!</p>
+            </div>
+            <div class="card">
+                <img src="img/profile-3.jpeg" alt="img" class="pic">
+                <h2 class="name">Someone Name</h2>
+                <p class="reviewpara">Lorem, ipsum dolor sit amet consectetur adipisicing elit. , modi!</p>
+            </div>
+        </div>
+    </section>
+    <hr>
+
+
+    <!-- Servies Section  -->
+    <section class="servies" id="serives">
+        <h1 class="serve">Services</h1>
+        <div class="servies-list"> <!--X2-->
+            <div class="serve-card"><!--X3-->
+                <i class="fas fa-bullhorn"></i>
+                <h3 class="serveimg">Safty Guide</h3>
+                <p class="servepara">lorem20</p>
+            </div>
+            <div class="serve-card">
+                <i class="fas fa-wifi"></i>
+                <h3 class="serveimg">Free Wifi</h3>
+                <p class="servepara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium eaque obcaecati
+                    itaque debitis quos atque quae harum possimus corrupti odio.</p>
+            </div>
+            <div class="serve-card">
+                <i class="fas fa-rupee-sign"></i>
+                <h3 class="serveimg">Affordable Price</h3>
+                <p class="servepara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium eaque obcaecati
+                    itaque debitis quos atque quae harum possimus corrupti odio.</p>
+            </div>
+        </div>
+        <div class="servies-list">
+            <div class="serve-card">
+                <i class="fas fa-utensils"></i>
+                <h3 class="serveimg">Food</h3>
+                <p class="servepara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium eaque obcaecati
+                    itaque debitis quos atque quae harum possimus corrupti ohio.</p>
+            </div>
+            <div class="serve-card">
+                <i class="fas fa-pump-medical"></i>
+                <h3 class="serveimg">Sanitized Works</h3>
+                <p class="servepara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium eaque obcaecati
+                    itaque debitis quos atque quae harum possimus corrupti odio.</p>
+            </div>
+            <div class="serve-card">
+                <i class="fas fa-taxi"></i>
+                <h3 class="serveimg">Many Travel options</h3>
+                <p class="servepara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium eaque obcaecati
+                    itaque debitis quos atque quae harum possimus corrupti odio.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Booking Section  -->
+    <section class="book" id="book">
+        <h1 class="bookhead">Book a Trip</h1>
+        <div class="form">
+            <form action="#" onsubmit="form();">
+                <div class="formdiv">
+                    <h3 class="formcontent name"><i class="fas fa-user"></i></h3>
+                    <input type="text" name="name" id="name" class="iteraction" placeholder="Enter Your Name">
+                </div>
+                <div class="formdiv">
+                    <h3 class="formcontent email"><i class="fas fa-envelope"></i></h3>
+                    <input type="email" name="email" id="email" class="iteraction" placeholder="Enter Your E-Mail">
+                </div>
+                <div class="formdiv">
+                    <h3 class="formcontent Where"><i class="fas fa-route"></i></h3>
+                    <input type="text" name="location" id="location" class="iteraction" placeholder="Where To Go">
+                </div>
+
+                <button type="submit" class="btn-form">Book Now</button>
+            </form>
+        </div>
+    </section>
+
+
+    <!-- Footer Section -->
+    <footer>
+        Created by Master Of Coding | CopyRight FavTour 
+    </footer>
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
